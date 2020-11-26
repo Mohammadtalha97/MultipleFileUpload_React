@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import FileUpload from "./Components/files_upload_component";
+import { UploaderComponent } from "@syncfusion/ej2-react-inputs";
+import SampleBase from "./Components/TestingUI";
+import Test2 from "./Components/Testing/Test2";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FileUpload />
+      {/* <SampleBase /> */}
+      {/* <UploaderComponent /> */}
+      <Test2 />
     </div>
   );
 }
